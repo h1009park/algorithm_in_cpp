@@ -4,7 +4,7 @@
 
 class Stack {
 private:
-	int arr[100000];
+	int arr[1000000];
 	int idx;
 
 public:
@@ -45,29 +45,28 @@ public:
 int n, cmd, x;
 Stack stack;
 
-int main() {
-	FILE *file = fopen("input.txt", "r");
+int main() {	
 	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) {		
 		scanf("%d", &cmd);
 		switch (cmd) {
 		case 1:
 			scanf("%d", &x);
-			stack.push(x);
+			stack.push(x);			
 			break;
 		case 2:			
-			printf("%d\n", stack.pop());
+			printf("%d\n", stack.pop());			
 			break;
 		case 3:			
-			printf("%d\n", stack.size());
+			printf("%d\n", stack.size());			
 			break;
 		case 4:			
-			printf("%d\n", stack.isEmpty());
+			printf("%d\n", stack.isEmpty());			
 			break;
 		case 5:			
-			printf("%d\n", stack.top());
+			printf("%d\n", stack.top());			
 			break;
-		}
+		}		
 	}
 	return 0;
 }

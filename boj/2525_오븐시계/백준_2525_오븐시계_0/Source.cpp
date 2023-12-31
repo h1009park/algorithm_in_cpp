@@ -4,24 +4,23 @@
 int h, m, c;
 
 int main() {
-	scanf("%d %d\n%d", &h, &m, &c);
-	int m2 = c % (24 * 60);
-	int m3 = m2 % 60;
-	int h3 = 0;
+	scanf("%d %d", &h, &m);
+	scanf("%d", &c);
 
-	if (m2 / 60 > 0) {
-		h3 = m2 / 60;
-		h += h3;
-	}
-		
-	m += m3;
-	if (m >= 60) {
-		m -= 60;
-		h++;
+	h += c / 60;
+	m += c % 60;
+	if (m / 60 > 0) {
+		h += m / 60;
+		m %= 60;
 	}
 
-	h +
+	h = h % 24;
+	if (m / 60 > 0) {
+		h += m / 60;
+		m = m % 60;
+	}
 
+	printf("%d %d", h, m);
 
 	return 0;
 }
