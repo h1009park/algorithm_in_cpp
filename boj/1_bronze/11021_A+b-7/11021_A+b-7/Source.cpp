@@ -1,7 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int n, a, b;
+int n;
+int a, b;
+
 int main() {
 	scanf("%d", &n);
 	for (int i = 1; i <= n; i++) {
