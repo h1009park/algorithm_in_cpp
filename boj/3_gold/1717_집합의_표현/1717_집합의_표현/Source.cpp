@@ -14,7 +14,6 @@ int mFind(int mIdx) {
 		arr[mIdx] = root;
 		return root;
 	}
-
 }
 
 void mUnion(int ma, int mb) {
@@ -25,20 +24,10 @@ void mUnion(int ma, int mb) {
 		return;
 	}
 	else if (ra > rb) {
-		for (int i = 0; i <= n; i++) {
-			if (arr[i] == rb) {
-				arr[i] = ra;
-			}
-		}
-		//arr[mb] = ra;
+		arr[rb] = ra;
 	}
 	else if (ra < rb) {
-		for (int i = 0; i <= n; i++) {
-			if (arr[i] == ra) {
-				arr[i] = rb;
-			}
-		}
-		//arr[ma] = rb;
+		arr[ra] = rb;
 	}
 
 }
@@ -53,10 +42,10 @@ int main() {
 	for (int i = 0; i < m; i++) {
 		scanf("%d %d %d", &cmd, &a, &b);
 
-		if (cmd == 0) { // union
+		if (cmd == 0) {
 			mUnion(a, b);
 		}
-		else if (cmd == 1) { // È®ÀÎ
+		else if (cmd == 1) {
 			int ra = mFind(a);
 			int rb = mFind(b);
 
