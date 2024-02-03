@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 int arr[100000];
-int n, k, s, e, sum, max;
+int n, k, sum, max;
 int main() {
 	scanf("%d %d", &n, &k);
-	s = 0, e = k - 1;
 
 	for (int i = 0; i < n; i++) {
 		scanf("%d", &arr[i]);
@@ -15,8 +14,8 @@ int main() {
 	}
 
 	max = sum;
-	for (int i = 1; i < n - k + 1; i++) {
-		sum = sum - arr[s++] + arr[++e];
+	for (int i = k; i < n; i++) {
+		sum = sum + arr[i] - arr[i - k];
 		max = max < sum ? sum : max;
 	}
 
