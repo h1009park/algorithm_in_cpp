@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.34320.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2559_수열", "2559_수열\2559_수열.vcxproj", "{82DD28EB-9AB0-4DF1-B823-C730381FA99C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82DD28EB-9AB0-4DF1-B823-C730381FA99C}.Debug|x64.ActiveCfg = Debug|x64
+		{82DD28EB-9AB0-4DF1-B823-C730381FA99C}.Debug|x64.Build.0 = Debug|x64
+		{82DD28EB-9AB0-4DF1-B823-C730381FA99C}.Debug|x86.ActiveCfg = Debug|Win32
+		{82DD28EB-9AB0-4DF1-B823-C730381FA99C}.Debug|x86.Build.0 = Debug|Win32
+		{82DD28EB-9AB0-4DF1-B823-C730381FA99C}.Release|x64.ActiveCfg = Release|x64
+		{82DD28EB-9AB0-4DF1-B823-C730381FA99C}.Release|x64.Build.0 = Release|x64
+		{82DD28EB-9AB0-4DF1-B823-C730381FA99C}.Release|x86.ActiveCfg = Release|Win32
+		{82DD28EB-9AB0-4DF1-B823-C730381FA99C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BE2798D-BBFD-46C0-B182-010F05225C55}
+	EndGlobalSection
+EndGlobal
